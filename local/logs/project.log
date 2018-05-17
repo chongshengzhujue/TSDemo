@@ -1,250 +1,69 @@
-2018-05-17T12:17:28.641Z - normal: Load ~/.CocosCreator/settings.json
-2018-05-17T12:17:28.644Z - normal: checking language setting...
-2018-05-17T12:17:28.644Z - normal: Language: zh
-2018-05-17T12:17:31.195Z - success: protocol editor-framework registered
-2018-05-17T12:17:31.195Z - success: protocol app registered
-2018-05-17T12:17:31.196Z - success: protocol theme registered
-2018-05-17T12:17:31.196Z - success: protocol packages registered
-2018-05-17T12:17:31.196Z - success: protocol unpack registerred
-2018-05-17T12:17:31.196Z - success: protocol disable-commonjs registerred
-2018-05-17T12:17:31.324Z - normal: connected!
-2018-05-17T12:17:31.327Z - normal: Check project /Users/talefun-zhang/cocosCreator/TsDemo
-2018-05-17T12:17:31.329Z - normal: Initializing Cocos2d
-2018-05-17T12:17:32.396Z - normal: Initializing Asset Database
-2018-05-17T12:17:32.482Z - success: protocol uuid registerred
-2018-05-17T12:17:32.482Z - success: protocol db registerred
-2018-05-17T12:17:32.482Z - success: protocol thumbnail registerred
-2018-05-17T12:17:32.482Z - normal: Loading editor/builtin packages
-2018-05-17T12:17:32.523Z - success: anysdk loaded
-2018-05-17T12:17:32.697Z - success: assets loaded
-2018-05-17T12:17:32.718Z - success: builder loaded
-2018-05-17T12:17:32.720Z - success: cocos-analytics loaded
-2018-05-17T12:17:32.725Z - success: console loaded
-2018-05-17T12:17:32.761Z - success: fb-instant-games loaded
-2018-05-17T12:17:32.765Z - success: hierarchy loaded
-2018-05-17T12:17:32.770Z - success: inspector loaded
-2018-05-17T12:17:32.772Z - success: keystore loaded
-2018-05-17T12:17:32.781Z - success: node-library loaded
-2018-05-17T12:17:32.783Z - success: package-asset loaded
-2018-05-17T12:17:32.785Z - success: preferences loaded
-2018-05-17T12:17:32.789Z - success: project-exporter loaded
-2018-05-17T12:17:32.808Z - success: project-importer loaded
-2018-05-17T12:17:32.812Z - success: project-settings loaded
-2018-05-17T12:17:32.825Z - success: ui-kit loaded
-2018-05-17T12:17:32.830Z - success: ui-grid loaded
-2018-05-17T12:17:32.834Z - success: scene loaded
-2018-05-17T12:17:32.835Z - success: sprite-editor loaded
-2018-05-17T12:17:32.840Z - success: store loaded
-2018-05-17T12:17:32.846Z - success: timeline loaded
-2018-05-17T12:17:32.846Z - normal: Loading builtin packages
-2018-05-17T12:17:32.858Z - success: asset-db-debugger loaded
-2018-05-17T12:17:32.859Z - success: color-picker loaded
-2018-05-17T12:17:32.863Z - success: package-manager loaded
-2018-05-17T12:17:32.971Z - success: sdkbox loaded
-2018-05-17T12:17:32.986Z - normal: last time update is in one day
-2018-05-17T12:17:32.986Z - success: tester loaded
-2018-05-17T12:17:32.990Z - success: ui-kit-preview-extra loaded
-2018-05-17T12:17:32.993Z - success: ui-kit-preview loaded
-2018-05-17T12:17:33.004Z - success: ui-tree loaded
-2018-05-17T12:17:34.312Z - normal: Initializing project /Users/talefun-zhang/cocosCreator/TsDemo
-2018-05-17T12:17:34.348Z - normal: Loading packages
-2018-05-17T12:17:34.353Z - normal: Watching packages
-2018-05-17T12:17:34.367Z - normal: Run Application
-2018-05-17T12:17:39.077Z - success: preview server running at http://localhost:7458
-2018-05-17T12:17:48.923Z - normal: 1.9.0
-2018-05-17T12:17:49.794Z - normal: No need to specify the "type" of "R.path._scale" because cc.Vec2 is a child class of ValueType.
-2018-05-17T12:17:49.796Z - normal: No need to specify the "type" of "R.path._position" because cc.Vec2 is a child class of ValueType.
-2018-05-17T12:17:49.813Z - failed: load script [cheerio] failed : Error: Cannot find module 'cheerio'
-    at Module._resolveFilename (module.js:470:15)
-    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
-    at Function.Module._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:1361)
-    at Function.Module._load (module.js:418:25)
-    at Module.require (module.js:498:17)
-    at require (internal/module.js:20:19)
-    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:967)
-    at /Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/component/optional/R.svg.js:1:367
-    at __define (/Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/component/optional/R.svg.js:7:15)
-    at /Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/component/optional/R.svg.js:158:13
-2018-05-17T12:17:49.819Z - failed: load script [DomHandler] failed : Error: Cannot find module 'DomHandler'
-    at Module._resolveFilename (module.js:470:15)
-    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
-    at Function.Module._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:1361)
-    at Function.Module._load (module.js:418:25)
-    at Module.require (module.js:498:17)
-    at require (internal/module.js:20:19)
-    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:967)
-    at /Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/component/optional/R.svg.js:1:367
-    at __define (/Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/component/optional/R.svg.js:116:18)
-    at /Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/component/optional/R.svg.js:158:13
-2018-05-17T12:17:49.821Z - failed: load script [DomHandler/lib/node] failed : Error: Cannot find module 'DomHandler/lib/node'
-    at Module._resolveFilename (module.js:470:15)
-    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
-    at Function.Module._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:1361)
-    at Function.Module._load (module.js:418:25)
-    at Module.require (module.js:498:17)
-    at require (internal/module.js:20:19)
-    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:967)
-    at /Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/component/optional/R.svg.js:1:367
-    at __define (/Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/component/optional/R.svg.js:117:21)
-    at /Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/component/optional/R.svg.js:158:13
-2018-05-17T12:17:49.827Z - failed: load script [DomHandler/lib/element] failed : Error: Cannot find module 'DomHandler/lib/element'
-    at Module._resolveFilename (module.js:470:15)
-    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
-    at Function.Module._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:1361)
-    at Function.Module._load (module.js:418:25)
-    at Module.require (module.js:498:17)
-    at require (internal/module.js:20:19)
-    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:967)
-    at /Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/component/optional/R.svg.js:1:367
-    at __define (/Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/component/optional/R.svg.js:118:24)
-    at /Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/component/optional/R.svg.js:158:13
-2018-05-17T12:17:49.828Z - failed: load script [./component/optional/R.svg] failed : TypeError: Cannot read property 'prototype' of undefined
-    at __define (/Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/component/optional/R.svg.js:120:11)
-    at /Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/component/optional/R.svg.js:158:13
-    at Object.<anonymous> (/Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/component/optional/R.svg.js:165:11)
-    at Object.<anonymous> (/Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/component/optional/R.svg.js:168:3)
-    at Module._compile (module.js:571:32)
-    at Object.Module._extensions..js (module.js:580:10)
-    at Module.load (module.js:488:32)
-    at tryModuleLoad (module.js:447:12)
-    at Function.Module._load (module.js:439:3)
-    at Module.require (module.js:498:17)
-2018-05-17T12:17:49.829Z - failed: load script [/Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/R.group.js] failed : TypeError: Cannot read property 'properties' of undefined
-    at Object.defineClass (/Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/utils/R.utils.js:34:40)
-    at __define (/Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/R.group.js:123:28)
-    at /Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/R.group.js:128:13
-    at Object.<anonymous> (/Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/R.group.js:135:11)
-    at Object.<anonymous> (/Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/R.group.js:138:3)
-    at Module._compile (module.js:571:32)
-    at Object.Module._extensions..js (module.js:580:10)
-    at Module.load (module.js:488:32)
-    at tryModuleLoad (module.js:447:12)
-    at Function.Module._load (module.js:439:3)
-2018-05-17T12:17:49.839Z - failed: load script [cheerio] failed : Error: Cannot find module 'cheerio'
-    at Module._resolveFilename (module.js:470:15)
-    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
-    at Function.Module._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:1361)
-    at Function.Module._load (module.js:418:25)
-    at Module.require (module.js:498:17)
-    at require (internal/module.js:20:19)
-    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:967)
-    at /Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/component/optional/R.svg.js:1:367
-    at __define (/Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/component/optional/R.svg.js:7:15)
-    at /Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/component/optional/R.svg.js:158:13
-2018-05-17T12:17:49.840Z - failed: load script [DomHandler] failed : Error: Cannot find module 'DomHandler'
-    at Module._resolveFilename (module.js:470:15)
-    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
-    at Function.Module._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:1361)
-    at Function.Module._load (module.js:418:25)
-    at Module.require (module.js:498:17)
-    at require (internal/module.js:20:19)
-    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:967)
-    at /Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/component/optional/R.svg.js:1:367
-    at __define (/Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/component/optional/R.svg.js:116:18)
-    at /Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/component/optional/R.svg.js:158:13
-2018-05-17T12:17:49.841Z - failed: load script [DomHandler/lib/node] failed : Error: Cannot find module 'DomHandler/lib/node'
-    at Module._resolveFilename (module.js:470:15)
-    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
-    at Function.Module._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:1361)
-    at Function.Module._load (module.js:418:25)
-    at Module.require (module.js:498:17)
-    at require (internal/module.js:20:19)
-    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:967)
-    at /Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/component/optional/R.svg.js:1:367
-    at __define (/Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/component/optional/R.svg.js:117:21)
-    at /Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/component/optional/R.svg.js:158:13
-2018-05-17T12:17:49.842Z - failed: load script [DomHandler/lib/element] failed : Error: Cannot find module 'DomHandler/lib/element'
-    at Module._resolveFilename (module.js:470:15)
-    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
-    at Function.Module._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:1361)
-    at Function.Module._load (module.js:418:25)
-    at Module.require (module.js:498:17)
-    at require (internal/module.js:20:19)
-    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:967)
-    at /Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/component/optional/R.svg.js:1:367
-    at __define (/Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/component/optional/R.svg.js:118:24)
-    at /Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/component/optional/R.svg.js:158:13
-2018-05-17T12:17:49.844Z - failed: load script [/Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/component/optional/R.svg.js] failed : TypeError: Cannot read property 'prototype' of undefined
-    at __define (/Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/component/optional/R.svg.js:120:11)
-    at /Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/component/optional/R.svg.js:158:13
-    at Object.<anonymous> (/Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/component/optional/R.svg.js:165:11)
-    at Object.<anonymous> (/Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/component/optional/R.svg.js:168:3)
-    at Module._compile (module.js:571:32)
-    at Object.Module._extensions..js (module.js:580:10)
-    at Module.load (module.js:488:32)
-    at tryModuleLoad (module.js:447:12)
-    at Function.Module._load (module.js:439:3)
-    at Module.require (module.js:498:17)
-2018-05-17T12:17:49.845Z - failed: load script [cheerio] failed : Error: Cannot find module 'cheerio'
-    at Module._resolveFilename (module.js:470:15)
-    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
-    at Function.Module._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:1361)
-    at Function.Module._load (module.js:418:25)
-    at Module.require (module.js:498:17)
-    at require (internal/module.js:20:19)
-    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:967)
-    at /Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/component/optional/R.svg.js:1:367
-    at __define (/Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/component/optional/R.svg.js:7:15)
-    at /Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/component/optional/R.svg.js:158:13
-2018-05-17T12:17:49.847Z - failed: load script [DomHandler] failed : Error: Cannot find module 'DomHandler'
-    at Module._resolveFilename (module.js:470:15)
-    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
-    at Function.Module._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:1361)
-    at Function.Module._load (module.js:418:25)
-    at Module.require (module.js:498:17)
-    at require (internal/module.js:20:19)
-    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:967)
-    at /Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/component/optional/R.svg.js:1:367
-    at __define (/Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/component/optional/R.svg.js:116:18)
-    at /Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/component/optional/R.svg.js:158:13
-2018-05-17T12:17:49.848Z - failed: load script [DomHandler/lib/node] failed : Error: Cannot find module 'DomHandler/lib/node'
-    at Module._resolveFilename (module.js:470:15)
-    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
-    at Function.Module._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:1361)
-    at Function.Module._load (module.js:418:25)
-    at Module.require (module.js:498:17)
-    at require (internal/module.js:20:19)
-    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:967)
-    at /Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/component/optional/R.svg.js:1:367
-    at __define (/Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/component/optional/R.svg.js:117:21)
-    at /Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/component/optional/R.svg.js:158:13
-2018-05-17T12:17:49.850Z - failed: load script [DomHandler/lib/element] failed : Error: Cannot find module 'DomHandler/lib/element'
-    at Module._resolveFilename (module.js:470:15)
-    at Function.Module._resolveFilename [as _resolveFilenameVendor] (/Applications/CocosCreator.app/Contents/Resources/electron.asar/common/reset-search-paths.js:35:12)
-    at Function.Module._resolveFilename (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:1361)
-    at Function.Module._load (module.js:418:25)
-    at Module.require (module.js:498:17)
-    at require (internal/module.js:20:19)
-    at Object.cc.require (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/project-scripts.js:1:967)
-    at /Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/component/optional/R.svg.js:1:367
-    at __define (/Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/component/optional/R.svg.js:118:24)
-    at /Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/component/optional/R.svg.js:158:13
-2018-05-17T12:17:49.850Z - failed: load script [./component/optional/R.svg] failed : TypeError: Cannot read property 'prototype' of undefined
-    at __define (/Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/component/optional/R.svg.js:120:11)
-    at /Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/component/optional/R.svg.js:158:13
-    at Object.<anonymous> (/Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/component/optional/R.svg.js:165:11)
-    at Object.<anonymous> (/Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/component/optional/R.svg.js:168:3)
-    at Module._compile (module.js:571:32)
-    at Object.Module._extensions..js (module.js:580:10)
-    at Module.load (module.js:488:32)
-    at tryModuleLoad (module.js:447:12)
-    at Function.Module._load (module.js:439:3)
-    at Module.require (module.js:498:17)
-2018-05-17T12:17:49.851Z - failed: load script [./R.group] failed : TypeError: Cannot read property 'properties' of undefined
-    at Object.defineClass (/Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/utils/R.utils.js:34:40)
-    at __define (/Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/R.group.js:123:28)
-    at /Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/R.group.js:128:13
-    at Object.<anonymous> (/Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/R.group.js:135:11)
-    at Object.<anonymous> (/Users/talefun-zhang/cocosCreator/TsDemo/temp/quick-scripts/assets/raphael/R.group.js:138:3)
-    at Module._compile (module.js:571:32)
-    at Object.Module._extensions..js (module.js:580:10)
-    at Module.load (module.js:488:32)
-    at tryModuleLoad (module.js:447:12)
-    at Function.Module._load (module.js:439:3)
-2018-05-17T12:17:49.859Z - normal: cacheStr : {}
-2018-05-17T12:17:49.895Z - warn: ctor of CCClass 'undefined' should not accept any arguments.
-2018-05-17T12:17:49.896Z - warn: ctor of CCClass 'undefined' should not accept any arguments.
-2018-05-17T12:17:49.911Z - warn: Please specifiy a default value for "blockSpriteFrames" property at its declaration: 😂
+2018-05-17T13:48:09.794Z - normal: Load ~/.CocosCreator/settings.json
+2018-05-17T13:48:09.798Z - normal: checking language setting...
+2018-05-17T13:48:09.799Z - normal: Language: zh
+2018-05-17T13:48:12.376Z - success: protocol editor-framework registered
+2018-05-17T13:48:12.376Z - success: protocol app registered
+2018-05-17T13:48:12.377Z - success: protocol theme registered
+2018-05-17T13:48:12.377Z - success: protocol packages registered
+2018-05-17T13:48:12.377Z - success: protocol unpack registerred
+2018-05-17T13:48:12.378Z - success: protocol disable-commonjs registerred
+2018-05-17T13:48:12.500Z - normal: connected!
+2018-05-17T13:48:12.506Z - normal: Check project E:\TSDemo
+2018-05-17T13:48:12.531Z - normal: Initializing Cocos2d
+2018-05-17T13:48:13.052Z - normal: Initializing Asset Database
+2018-05-17T13:48:13.102Z - success: protocol uuid registerred
+2018-05-17T13:48:13.102Z - success: protocol db registerred
+2018-05-17T13:48:13.102Z - success: protocol thumbnail registerred
+2018-05-17T13:48:13.102Z - normal: Loading editor/builtin packages
+2018-05-17T13:48:13.205Z - success: anysdk loaded
+2018-05-17T13:48:13.406Z - success: assets loaded
+2018-05-17T13:48:13.409Z - success: builder loaded
+2018-05-17T13:48:13.412Z - success: cocos-analytics loaded
+2018-05-17T13:48:13.416Z - success: console loaded
+2018-05-17T13:48:13.453Z - success: fb-instant-games loaded
+2018-05-17T13:48:13.457Z - success: hierarchy loaded
+2018-05-17T13:48:13.460Z - success: inspector loaded
+2018-05-17T13:48:13.468Z - success: keystore loaded
+2018-05-17T13:48:13.472Z - success: node-library loaded
+2018-05-17T13:48:13.479Z - success: package-asset loaded
+2018-05-17T13:48:13.483Z - success: preferences loaded
+2018-05-17T13:48:13.485Z - success: project-exporter loaded
+2018-05-17T13:48:13.501Z - success: project-importer loaded
+2018-05-17T13:48:13.504Z - success: project-settings loaded
+2018-05-17T13:48:13.507Z - success: ui-kit loaded
+2018-05-17T13:48:13.510Z - success: ui-grid loaded
+2018-05-17T13:48:13.516Z - success: scene loaded
+2018-05-17T13:48:13.518Z - success: sprite-editor loaded
+2018-05-17T13:48:13.521Z - success: store loaded
+2018-05-17T13:48:13.525Z - success: timeline loaded
+2018-05-17T13:48:13.525Z - normal: Loading builtin packages
+2018-05-17T13:48:13.534Z - success: asset-db-debugger loaded
+2018-05-17T13:48:13.536Z - success: code-editor loaded
+2018-05-17T13:48:13.542Z - success: color-picker loaded
+2018-05-17T13:48:13.545Z - success: package-manager loaded
+2018-05-17T13:48:13.550Z - success: sdkbox loaded
+2018-05-17T13:48:13.552Z - success: tester loaded
+2018-05-17T13:48:13.554Z - success: ui-kit-preview-extra loaded
+2018-05-17T13:48:13.555Z - success: ui-kit-preview loaded
+2018-05-17T13:48:13.557Z - success: ui-tree loaded
+2018-05-17T13:48:14.896Z - normal: Initializing project E:\TSDemo
+2018-05-17T13:48:14.899Z - normal: Loading packages
+2018-05-17T13:48:14.905Z - normal: Watching packages
+2018-05-17T13:48:14.925Z - normal: Run Application
+2018-05-17T13:48:15.948Z - warn: [db-task][init] Backup unused meta file: db://assets/resources/font.meta
+2018-05-17T13:48:15.953Z - warn: [db-task][init] Backup unused meta file: db://assets/scripts/platform/Android.meta
+2018-05-17T13:48:15.954Z - warn: [db-task][init] Backup unused meta file: db://assets/scripts/platform/iOS.meta
+2018-05-17T13:48:15.956Z - warn: [db-task][init] Backup unused meta file: db://assets/scripts/platform/web.meta
+2018-05-17T13:48:31.481Z - success: preview server running at http://localhost:7456
+2018-05-17T13:48:38.978Z - normal: 1.9.0
+2018-05-17T13:48:39.894Z - normal: No need to specify the "type" of "R.path._scale" because cc.Vec2 is a child class of ValueType.
+2018-05-17T13:48:39.895Z - normal: No need to specify the "type" of "R.path._position" because cc.Vec2 is a child class of ValueType.
+2018-05-17T13:48:40.008Z - normal: No need to specify the "type" of "R.group._scale" because cc.Vec2 is a child class of ValueType.
+2018-05-17T13:48:40.009Z - normal: No need to specify the "type" of "R.group._position" because cc.Vec2 is a child class of ValueType.
+2018-05-17T13:48:40.021Z - normal: cacheStr : {}
+2018-05-17T13:48:40.045Z - warn: ctor of CCClass 'undefined' should not accept any arguments.
+2018-05-17T13:48:40.047Z - warn: ctor of CCClass 'undefined' should not accept any arguments.
+2018-05-17T13:48:40.074Z - warn: Please specifiy a default value for "blockSpriteFrames" property at its declaration: 😂
     // Before:
     @property(...)
     value;
@@ -252,7 +71,7 @@
     // After:
     @property(...)
     value = 0;
-2018-05-17T12:17:49.923Z - warn: Please specifiy a default value for "physicsPrefab" property at its declaration: 😂
+2018-05-17T13:48:40.081Z - warn: Please specifiy a default value for "physicsPrefab" property at its declaration: 😂
     // Before:
     @property(...)
     value;
@@ -260,18 +79,3 @@
     // After:
     @property(...)
     value = 0;
-2018-05-17T12:54:49.649Z - error: Error: ENOENT: no such file or directory, open '/Users/talefun-zhang/cocosCreator/TsDemo/local/local.json'
-    at Object.fs.openSync (fs.js:584:18)
-    at Object.module.(anonymous function) [as openSync] (ELECTRON_ASAR.js:191:20)
-    at Object.fs.writeFileSync (fs.js:1326:33)
-    at _Profile.save (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/electron-profile/lib/main.js:195:8)
-    at _setCurrentScene (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/builtin/scene/main.js:1:1099)
-    at Object.set-current-scene (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/builtin/scene/main.js:1:3316)
-    at emitTwo (events.js:106:13)
-    at EventEmitter.emit (events.js:194:7)
-    at _main2mainOpts (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/main/ipc.js:1:1524)
-    at Object.Ipc.sendToMain (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/main/ipc.js:1:4188)
-    at process.on.t (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/core/editor-init.js:1:1068)
-    at emitOne (events.js:101:20)
-    at process.emit (events.js:191:7)
-    at process._fatalException (bootstrap_node.js:308:26)
