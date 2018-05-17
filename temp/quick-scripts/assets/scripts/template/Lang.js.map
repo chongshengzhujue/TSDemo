@@ -1,0 +1,1 @@
+{"version":3,"sources":["Lang.ts"],"names":[],"mappings":";;;;AAAA,aAAa;AACb,qBAAqB;;AAGrB,IAAI,OAAO,GAAG,IAAI,CAAC;AAEnB,kBAAe,OAAO,CAAC","file":"","sourceRoot":"../../../../../assets/scripts/template","sourcesContent":["//缓存多语言json数据\n//初始化Localization时，加载\n\n\nlet langStr = \"{}\";\n\nexport default langStr;\n"]}

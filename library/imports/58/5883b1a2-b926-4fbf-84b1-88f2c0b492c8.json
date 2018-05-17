@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ui_cover",
+    "texture": "25a37044-94e9-4f19-a715-2ef6f514bb6a",
+    "atlas": "",
+    "rect": [
+      2,
+      2,
+      223,
+      992
+    ],
+    "offset": [
+      -14.5,
+      14
+    ],
+    "originalSize": [
+      256,
+      1024
+    ]
+  }
+}

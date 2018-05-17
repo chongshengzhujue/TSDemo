@@ -1,2 +1,2 @@
-# TSDemo
-this is a TSDemo
+# hello-world
+Hello world new project template.

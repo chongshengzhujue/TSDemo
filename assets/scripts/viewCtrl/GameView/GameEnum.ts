@@ -1,0 +1,6 @@
+export enum BlockState {
+    BLOCK_STATE_BOTTOM = 0,
+    BLOCK_STATE_MOVING,
+    BLOCK_STATE_BOARD,
+    BLOCK_STATE_BOARD_TIPS
+}

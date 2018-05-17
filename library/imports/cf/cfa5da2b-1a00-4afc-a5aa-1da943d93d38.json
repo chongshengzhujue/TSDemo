@@ -1,0 +1,20 @@
+{
+  "__type__": "cc.SpriteAtlas",
+  "_name": "ui_cover.plist",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_spriteFrames": {
+    "btn_more_game_b": {
+      "__uuid__": "24021397-1ed5-4d89-bf15-be7099c21e5d"
+    },
+    "btn_start_game_1": {
+      "__uuid__": "5c76e322-3bbe-4b05-9acb-3b24211feca8"
+    },
+    "loading_logo": {
+      "__uuid__": "23587dfa-e51b-4882-a353-5d31e248acd3"
+    },
+    "logo_mask": {
+      "__uuid__": "ba7ee19d-3db8-45c1-9c43-7e0858feb97a"
+    }
+  }
+}
