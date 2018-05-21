@@ -14,7 +14,7 @@ const {ccclass, property} = cc._decorator;
 let talefun = (<any>cc).talefun;
 
 @ccclass
-export default class PhysicsNodeLogic extends UserComponent {
+export default class physicsNodeLogic extends UserComponent {
     // LIFE-CYCLE CALLBACKS:
 
     touchStartHandler: () => void;
@@ -22,11 +22,11 @@ export default class PhysicsNodeLogic extends UserComponent {
     touchEndHandler: () => void;
     touchCancelHandler: () => void;
 
-    path: any = null;
+    path: cc.Graphics = null;
 
     points: cc.Vec2[] = [];
 
-    physicsPolygon: cc.PhysicsPolygonCollider = null;
+    physicsChain: cc.PhysicsPolygonCollider = null;
 
     rigibodyLogic: cc.RigidBody = null;
 
@@ -40,19 +40,25 @@ export default class PhysicsNodeLogic extends UserComponent {
             this.viewCtrl = (<any>this.node).viewCtrl;
         }
 
-        this.path = this.addComponent('R.path');
-        this.path.fillColor = 'none';
-        this.path.lineWidth = 10;
-        this.path.showHandles = true;
+        this.path = this.addComponent(cc.Graphics);
+        this.path.strokeColor = cc.color(255, 0, 0);
+        this.path.lineWidth = 5;
 
         this.rigibodyLogic = this.getComponent(cc.RigidBody);
-        this.physicsPolygon = this.getComponent("PhysicsPolygonCollider");
+        this.physicsChain = this.getComponent("cc.PhysicsPolygonCollider");
         talefun.LogHelper.log("onEnter :" + "LogoViewLogic");
+        this.rigibodyLogic.active = false;
 
         this.touchStartHandler = this.touchStart.bind(this);
         this.touchMoveHandler = this.touchMove.bind(this);
         this.touchEndHandler = this.touchEnd.bind(this);
         this.touchCancelHandler = this.touchCancel.bind(this);
+
+        this.addTouch();
+    }
+
+    onExit() {
+        this.removeTouch();
     }
 
     addTouch() {
@@ -72,28 +78,37 @@ export default class PhysicsNodeLogic extends UserComponent {
     touchStart(event : cc.Event.EventTouch) {
         let touchLoc = event.getLocation();
         touchLoc = this.node.parent.convertToNodeSpaceAR(touchLoc);
-
+        
         this.points.push(touchLoc);
-
+        this.path.moveTo(touchLoc);
         return true;
     }
 
     touchMove(event : cc.Event.EventTouch) {
         let touchLoc = event.getLocation();
         touchLoc = this.node.parent.convertToNodeSpaceAR(touchLoc);
-
-        this.points.push(touchLoc);
-        this.path.points(this.points);
+        if (this.checkIsCanDraw(this.points[this.points.length - 1], touchLoc)) {
+            this.points.push(touchLoc);
+            this.path.lineTo(touchLoc.x, touchLoc.y);
+            // this.path.moveTo(touchLoc.x, touchLoc.y);
+            this.path.stroke();
+        }
     }
 
     touchEnd(event : cc.Event.EventTouch) {
-        this.path.points(this.points);
-        this.path.simplify();
-        this.parsePathString(this.path.getPathString());
+        let touchLoc = event.getLocation();
+        touchLoc = this.node.parent.convertToNodeSpaceAR(touchLoc);
+        this.path.lineTo(touchLoc.x, touchLoc.y);
+        this.path.stroke();
+        this.createRigibody();
     }
 
     touchCancel(event : cc.Event.EventTouch) {
         
+    }
+
+    checkIsCanDraw(lastPoint: cc.Vec2, nowPoint: cc.Vec2) {
+        return cc.pDistance(lastPoint, nowPoint) >= 20;
     }
 
     parsePathString(pathStr) {
@@ -119,10 +134,12 @@ export default class PhysicsNodeLogic extends UserComponent {
             }
         }
         cc.log("zhangyakun" + JSON.stringify(pathList));
-    },
+    }
 
-    createRigibody(bezieConfig) {
-
-    },
+    createRigibody() {
+        this.rigibodyLogic.active = true;
+        this.physicsChain.points = this.points;
+        this.physicsChain.apply();
+    }
 
 }

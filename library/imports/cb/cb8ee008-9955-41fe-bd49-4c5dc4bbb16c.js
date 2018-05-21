@@ -1,0 +1,126 @@
+"use strict";
+cc._RF.push(module, 'cb8eeAImVVB/r1JTF3Eu7Fs', 'physicsNodeLogic');
+// scripts/viewCtrl/GameView/physicsNodeLogic.ts
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var UserComponent_1 = require("../Base/UserComponent");
+// Learn TypeScript:
+//  - [Chinese] http://www.cocos.com/docs/creator/scripting/typescript.html
+//  - [English] http://www.cocos2d-x.org/docs/editors_and_tools/creator-chapters/scripting/typescript/index.html
+// Learn Attribute:
+//  - [Chinese] http://www.cocos.com/docs/creator/scripting/reference/attributes.html
+//  - [English] http://www.cocos2d-x.org/docs/editors_and_tools/creator-chapters/scripting/reference/attributes/index.html
+// Learn life-cycle callbacks:
+//  - [Chinese] http://www.cocos.com/docs/creator/scripting/life-cycle-callbacks.html
+//  - [English] http://www.cocos2d-x.org/docs/editors_and_tools/creator-chapters/scripting/life-cycle-callbacks/index.html
+var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+var talefun = cc.talefun;
+var physicsNodeLogic = /** @class */ (function (_super) {
+    __extends(physicsNodeLogic, _super);
+    function physicsNodeLogic() {
+        // LIFE-CYCLE CALLBACKS:
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.path = null;
+        _this.points = [];
+        _this.physicsChain = null;
+        _this.rigibodyLogic = null;
+        return _this;
+    }
+    physicsNodeLogic.prototype.onLoad = function () {
+    };
+    physicsNodeLogic.prototype.onEnter = function () {
+        if (this.node.viewCtrl) {
+            this.viewCtrl = this.node.viewCtrl;
+        }
+        this.path = this.addComponent(cc.Graphics);
+        this.path.strokeColor = cc.color(255, 0, 0);
+        this.path.lineWidth = 5;
+        this.rigibodyLogic = this.getComponent(cc.RigidBody);
+        this.physicsChain = this.getComponent("cc.PhysicsPolygonCollider");
+        talefun.LogHelper.log("onEnter :" + "LogoViewLogic");
+        this.rigibodyLogic.active = false;
+        this.touchStartHandler = this.touchStart.bind(this);
+        this.touchMoveHandler = this.touchMove.bind(this);
+        this.touchEndHandler = this.touchEnd.bind(this);
+        this.touchCancelHandler = this.touchCancel.bind(this);
+        this.addTouch();
+    };
+    physicsNodeLogic.prototype.onExit = function () {
+        this.removeTouch();
+    };
+    physicsNodeLogic.prototype.addTouch = function () {
+        this.node.on(cc.Node.EventType.TOUCH_START, this.touchStartHandler);
+        this.node.on(cc.Node.EventType.TOUCH_MOVE, this.touchMoveHandler);
+        this.node.on(cc.Node.EventType.TOUCH_END, this.touchEndHandler);
+        this.node.on(cc.Node.EventType.TOUCH_CANCEL, this.touchCancelHandler);
+    };
+    physicsNodeLogic.prototype.removeTouch = function () {
+        this.node.off(cc.Node.EventType.TOUCH_START, this.touchStartHandler);
+        this.node.off(cc.Node.EventType.TOUCH_MOVE, this.touchMoveHandler);
+        this.node.off(cc.Node.EventType.TOUCH_END, this.touchEndHandler);
+        this.node.off(cc.Node.EventType.TOUCH_CANCEL, this.touchCancelHandler);
+    };
+    physicsNodeLogic.prototype.touchStart = function (event) {
+        var touchLoc = event.getLocation();
+        touchLoc = this.node.parent.convertToNodeSpaceAR(touchLoc);
+        this.points.push(touchLoc);
+        this.path.moveTo(touchLoc);
+        return true;
+    };
+    physicsNodeLogic.prototype.touchMove = function (event) {
+        var touchLoc = event.getLocation();
+        touchLoc = this.node.parent.convertToNodeSpaceAR(touchLoc);
+        if (this.checkIsCanDraw(this.points[this.points.length - 1], touchLoc)) {
+            this.points.push(touchLoc);
+            this.path.lineTo(touchLoc.x, touchLoc.y);
+            // this.path.moveTo(touchLoc.x, touchLoc.y);
+            this.path.stroke();
+        }
+    };
+    physicsNodeLogic.prototype.touchEnd = function (event) {
+        var touchLoc = event.getLocation();
+        touchLoc = this.node.parent.convertToNodeSpaceAR(touchLoc);
+        this.path.lineTo(touchLoc.x, touchLoc.y);
+        this.path.stroke();
+        this.createRigibody();
+    };
+    physicsNodeLogic.prototype.touchCancel = function (event) {
+    };
+    physicsNodeLogic.prototype.checkIsCanDraw = function (lastPoint, nowPoint) {
+        return cc.pDistance(lastPoint, nowPoint) >= 20;
+    };
+    physicsNodeLogic.prototype.parsePathString = function (pathStr) {
+        var pathList = pathStr.split(" ");
+        var bezieConfig = {
+            beginPos: cc.p(0, 0),
+            control1: cc.p(0, 0),
+            control2: cc.p(0, 0),
+            endPos: cc.p(0, 0),
+        };
+        for (var i = 0, len = pathList.length; i < len; i++) {
+            if (pathList[i] === "C") {
+                bezieConfig.beginPos.x = parseFloat(pathList[i - 2]);
+                bezieConfig.beginPos.y = parseFloat(pathList[i - 1]);
+                bezieConfig.control1.x = parseFloat(pathList[i + 1]);
+                bezieConfig.control1.y = parseFloat(pathList[i + 2]);
+                bezieConfig.control2.x = parseFloat(pathList[i + 3]);
+                bezieConfig.control2.y = parseFloat(pathList[i + 4]);
+                bezieConfig.endPos.x = parseFloat(pathList[i + 5]);
+                bezieConfig.endPos.y = parseFloat(pathList[i + 6]);
+            }
+        }
+        cc.log("zhangyakun" + JSON.stringify(pathList));
+    };
+    physicsNodeLogic.prototype.createRigibody = function () {
+        this.rigibodyLogic.active = true;
+        this.physicsChain.points = this.points;
+        this.physicsChain.apply();
+    };
+    physicsNodeLogic = __decorate([
+        ccclass
+    ], physicsNodeLogic);
+    return physicsNodeLogic;
+}(UserComponent_1.default));
+exports.default = physicsNodeLogic;
+
+cc._RF.pop();
