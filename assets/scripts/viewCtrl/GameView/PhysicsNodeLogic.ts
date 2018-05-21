@@ -42,7 +42,7 @@ export default class physicsNodeLogic extends UserComponent {
 
         this.path = this.addComponent(cc.Graphics);
         this.path.strokeColor = cc.color(255, 0, 0);
-        this.path.lineWidth = 5;
+        this.path.lineWidth = 20;
 
         this.rigibodyLogic = this.getComponent(cc.RigidBody);
         this.physicsChain = this.getComponent("cc.PhysicsPolygonCollider");
@@ -80,7 +80,7 @@ export default class physicsNodeLogic extends UserComponent {
         touchLoc = this.node.parent.convertToNodeSpaceAR(touchLoc);
         
         this.points.push(touchLoc);
-        this.path.moveTo(touchLoc);
+        this.path.moveTo(touchLoc.x, touchLoc.y);
         return true;
     }
 
@@ -100,6 +100,7 @@ export default class physicsNodeLogic extends UserComponent {
         touchLoc = this.node.parent.convertToNodeSpaceAR(touchLoc);
         this.path.lineTo(touchLoc.x, touchLoc.y);
         this.path.stroke();
+        this.points.push(touchLoc);
         this.createRigibody();
     }
 
@@ -138,8 +139,69 @@ export default class physicsNodeLogic extends UserComponent {
 
     createRigibody() {
         this.rigibodyLogic.active = true;
-        this.physicsChain.points = this.points;
+        let posArr = [];
+        for (let i = 0; i < this.points.length - 1; i++) {
+            let beginPos = this.points[i];
+            let endPos = this.points[i + 1];
+            let posGroup = this.getSegmenPos(beginPos, endPos);
+
+            if (i === 0) {
+                posArr.splice(0, 0, posGroup.beginPosArr[0]);
+                posArr.push(posGroup.endPosArr[0]);
+            }
+
+            posArr.splice(0, 0, posGroup.beginPosArr[1]);
+            posArr.push(posGroup.endPosArr[1]);
+        }
+
+        this.path.lineWidth = 2;
+        this.path.strokeColor = cc.color(0, 255, 0);
+        this.path.moveTo(posArr[0]);
+        for (let i in posArr) {
+            this.path.lineTo(posArr[i].x, posArr[i].y);
+        }
+        this.path.stroke();
+        this.physicsChain.points = posArr;
         this.physicsChain.apply();
     }
+
+    getSegmenPos(beginPos: cc.Vec2, endPos: cc.Vec2) {
+        let k = (endPos.y - beginPos.y) / (endPos.x - beginPos.x);
+        let offX = 0;
+        let offY = 0;
+        if (k === 0) {
+            offY = this.path.lineWidth / 2;
+            offX = 0;
+        }
+        else if (!isFinite(k)) {
+            offX = this.path.lineWidth / 2;
+            offY = 0;
+        } else {
+            let k1 = -1 / k;
+
+            let angle = Math.atan(k1);
+            let sin = Math.sin(angle);
+            let cos = Math.cos(angle);
+            cc.log("angle" + angle);
+
+            offX = this.path.lineWidth / 2 * cos;
+            offY = this.path.lineWidth / 2 * sin;
+
+            if (endPos.y > beginPos.y) {
+                offX = -offX;
+                offY = -offY;
+            }
+        }
+        
+
+        let beingPosArr = [cc.p(beginPos.x - offX, beginPos.y - offY), cc.p(endPos.x - offX, endPos.y - offY)];
+        let endPosArr = [cc.p(beginPos.x + offX, beginPos.y + offY), cc.p(endPos.x + offX, endPos.y + offY)];
+
+        return {
+            beginPosArr : beingPosArr,
+            endPosArr : endPosArr
+        };
+    }
+
 
 }
