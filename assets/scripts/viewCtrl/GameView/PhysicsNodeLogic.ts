@@ -13,6 +13,8 @@ import UserComponent from "../Base/UserComponent";
 const {ccclass, property} = cc._decorator;
 let talefun = (<any>cc).talefun;
 
+import MyPhysicsCollider = require("./MyPhysicsCollider")
+
 @ccclass
 export default class physicsNodeLogic extends UserComponent {
     // LIFE-CYCLE CALLBACKS:
@@ -26,7 +28,7 @@ export default class physicsNodeLogic extends UserComponent {
 
     points: cc.Vec2[] = [];
 
-    physicsChain: cc.PhysicsPolygonCollider = null;
+    physicsChain: MyPhysicsCollider = null;
 
     rigibodyLogic: cc.RigidBody = null;
 
@@ -45,7 +47,7 @@ export default class physicsNodeLogic extends UserComponent {
         this.path.lineWidth = 20;
 
         this.rigibodyLogic = this.getComponent(cc.RigidBody);
-        this.physicsChain = this.getComponent("cc.PhysicsPolygonCollider");
+        this.physicsChain = this.getComponent("MyPhysicsCollider");
         talefun.LogHelper.log("onEnter :" + "LogoViewLogic");
         this.rigibodyLogic.active = false;
 
@@ -78,7 +80,7 @@ export default class physicsNodeLogic extends UserComponent {
     touchStart(event : cc.Event.EventTouch) {
         let touchLoc = event.getLocation();
         touchLoc = this.node.parent.convertToNodeSpaceAR(touchLoc);
-        
+
         this.points.push(touchLoc);
         this.path.moveTo(touchLoc.x, touchLoc.y);
         return true;
@@ -139,30 +141,31 @@ export default class physicsNodeLogic extends UserComponent {
 
     createRigibody() {
         this.rigibodyLogic.active = true;
-        let posArr = [];
-        for (let i = 0; i < this.points.length - 1; i++) {
-            let beginPos = this.points[i];
-            let endPos = this.points[i + 1];
-            let posGroup = this.getSegmenPos(beginPos, endPos);
+        // let posArr = [];
+        // for (let i = 0; i < this.points.length - 1; i++) {
+        //     let beginPos = this.points[i];
+        //     let endPos = this.points[i + 1];
+        //     let posGroup = this.getSegmenPos(beginPos, endPos);
 
-            if (i === 0) {
-                posArr.splice(0, 0, posGroup.beginPosArr[0]);
-                posArr.push(posGroup.endPosArr[0]);
-            }
+        //     if (i === 0) {
+        //         posArr.splice(0, 0, posGroup.beginPosArr[0]);
+        //         posArr.push(posGroup.endPosArr[0]);
+        //     }
 
-            posArr.splice(0, 0, posGroup.beginPosArr[1]);
-            posArr.push(posGroup.endPosArr[1]);
-        }
-
-        this.path.lineWidth = 2;
-        this.path.strokeColor = cc.color(0, 255, 0);
-        this.path.moveTo(posArr[0]);
-        for (let i in posArr) {
-            this.path.lineTo(posArr[i].x, posArr[i].y);
-        }
-        this.path.stroke();
-        this.physicsChain.points = posArr;
+        //     posArr.splice(0, 0, posGroup.beginPosArr[1]);
+        //     posArr.push(posGroup.endPosArr[1]);
+        // }
+        // this.path.lineWidth = 2;
+        // this.path.strokeColor = cc.color(0, 255, 0);
+        // this.path.moveTo(this.points[0]);
+        // for (let i in this.points) {
+        //     this.path.lineTo(this.points[i].x, this.points[i].y);
+        // }
+        // this.path.stroke();
+        this.physicsChain.lineWidth = this.path.lineWidth;
+        this.physicsChain.points = this.points;
         this.physicsChain.apply();
+
     }
 
     getSegmenPos(beginPos: cc.Vec2, endPos: cc.Vec2) {
@@ -172,6 +175,11 @@ export default class physicsNodeLogic extends UserComponent {
         if (k === 0) {
             offY = this.path.lineWidth / 2;
             offX = 0;
+
+            if (endPos.x < beginPos.x) {
+                offX = -offX;
+                offY = -offY;
+            }
         }
         else if (!isFinite(k)) {
             offX = this.path.lineWidth / 2;
@@ -186,13 +194,12 @@ export default class physicsNodeLogic extends UserComponent {
 
             offX = this.path.lineWidth / 2 * cos;
             offY = this.path.lineWidth / 2 * sin;
-
-            if (endPos.y > beginPos.y) {
-                offX = -offX;
-                offY = -offY;
-            }
         }
-        
+
+        if (endPos.y > beginPos.y) {
+            offX = -offX;
+            offY = -offY;
+        }
 
         let beingPosArr = [cc.p(beginPos.x - offX, beginPos.y - offY), cc.p(endPos.x - offX, endPos.y - offY)];
         let endPosArr = [cc.p(beginPos.x + offX, beginPos.y + offY), cc.p(endPos.x + offX, endPos.y + offY)];
