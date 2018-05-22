@@ -1,0 +1,381 @@
+2018-05-22T14:33:33.059Z - normal: Load ~/.CocosCreator/settings.json
+2018-05-22T14:33:33.064Z - normal: checking language setting...
+2018-05-22T14:33:33.064Z - normal: Language: zh
+2018-05-22T14:33:35.522Z - success: protocol editor-framework registered
+2018-05-22T14:33:35.522Z - success: protocol app registered
+2018-05-22T14:33:35.522Z - success: protocol theme registered
+2018-05-22T14:33:35.522Z - success: protocol packages registered
+2018-05-22T14:33:35.523Z - success: protocol unpack registerred
+2018-05-22T14:33:35.523Z - success: protocol disable-commonjs registerred
+2018-05-22T14:33:35.653Z - normal: connected!
+2018-05-22T14:33:35.660Z - normal: Check project E:\TSDemo
+2018-05-22T14:33:35.664Z - normal: Initializing Cocos2d
+2018-05-22T14:33:36.176Z - normal: Initializing Asset Database
+2018-05-22T14:33:36.226Z - success: protocol uuid registerred
+2018-05-22T14:33:36.227Z - success: protocol db registerred
+2018-05-22T14:33:36.227Z - success: protocol thumbnail registerred
+2018-05-22T14:33:36.227Z - normal: Loading editor/builtin packages
+2018-05-22T14:33:36.363Z - success: anysdk loaded
+2018-05-22T14:33:36.528Z - success: assets loaded
+2018-05-22T14:33:36.531Z - success: builder loaded
+2018-05-22T14:33:36.534Z - success: cocos-analytics loaded
+2018-05-22T14:33:36.538Z - success: console loaded
+2018-05-22T14:33:36.571Z - success: fb-instant-games loaded
+2018-05-22T14:33:36.581Z - success: hierarchy loaded
+2018-05-22T14:33:36.585Z - success: inspector loaded
+2018-05-22T14:33:36.592Z - success: keystore loaded
+2018-05-22T14:33:36.595Z - success: node-library loaded
+2018-05-22T14:33:36.598Z - success: package-asset loaded
+2018-05-22T14:33:36.601Z - success: preferences loaded
+2018-05-22T14:33:36.603Z - success: project-exporter loaded
+2018-05-22T14:33:36.618Z - success: project-importer loaded
+2018-05-22T14:33:36.620Z - success: project-settings loaded
+2018-05-22T14:33:36.622Z - success: ui-kit loaded
+2018-05-22T14:33:36.626Z - success: ui-grid loaded
+2018-05-22T14:33:36.630Z - success: scene loaded
+2018-05-22T14:33:36.631Z - success: sprite-editor loaded
+2018-05-22T14:33:36.634Z - success: store loaded
+2018-05-22T14:33:36.638Z - success: timeline loaded
+2018-05-22T14:33:36.638Z - normal: Loading builtin packages
+2018-05-22T14:33:36.649Z - success: asset-db-debugger loaded
+2018-05-22T14:33:36.651Z - success: code-editor loaded
+2018-05-22T14:33:36.658Z - success: color-picker loaded
+2018-05-22T14:33:36.660Z - success: package-manager loaded
+2018-05-22T14:33:36.677Z - success: sdkbox loaded
+2018-05-22T14:33:36.679Z - success: tester loaded
+2018-05-22T14:33:36.681Z - success: ui-kit-preview-extra loaded
+2018-05-22T14:33:36.682Z - success: ui-kit-preview loaded
+2018-05-22T14:33:36.684Z - success: ui-tree loaded
+2018-05-22T14:33:38.016Z - normal: Initializing project E:\TSDemo
+2018-05-22T14:33:38.028Z - normal: Loading packages
+2018-05-22T14:33:38.035Z - normal: Watching packages
+2018-05-22T14:33:38.055Z - normal: Run Application
+2018-05-22T14:33:39.061Z - warn: [db-task][init] Backup unused meta file: db://assets/resources/font.meta
+2018-05-22T14:33:39.066Z - warn: [db-task][init] Backup unused meta file: db://assets/scripts/platform/Android.meta
+2018-05-22T14:33:39.068Z - warn: [db-task][init] Backup unused meta file: db://assets/scripts/platform/iOS.meta
+2018-05-22T14:33:39.070Z - warn: [db-task][init] Backup unused meta file: db://assets/scripts/platform/web.meta
+2018-05-22T14:34:23.205Z - success: preview server running at http://localhost:7456
+2018-05-22T14:34:28.806Z - normal: 1.9.0
+2018-05-22T14:34:29.467Z - normal: cacheStr : {}
+2018-05-22T14:34:29.488Z - warn: ctor of CCClass 'undefined' should not accept any arguments.
+2018-05-22T14:34:29.489Z - warn: ctor of CCClass 'undefined' should not accept any arguments.
+2018-05-22T14:34:29.496Z - warn: Please specifiy a default value for "blockSpriteFrames" property at its declaration: 😂
+    // Before:
+    @property(...)
+    value;
+
+    // After:
+    @property(...)
+    value = 0;
+2018-05-22T14:34:29.502Z - warn: Please specifiy a default value for "physicsPrefab" property at its declaration: 😂
+    // Before:
+    @property(...)
+    value;
+
+    // After:
+    @property(...)
+    value = 0;
+2018-05-22T14:34:29.503Z - warn: Should not specify class name MyPhysicsCollider for Component which defines in project.
+2018-05-22T14:35:20.850Z - normal: cacheStr : {}
+2018-05-22T14:35:20.855Z - warn: ctor of CCClass 'undefined' should not accept any arguments.
+2018-05-22T14:35:20.855Z - warn: ctor of CCClass 'undefined' should not accept any arguments.
+2018-05-22T14:35:20.859Z - warn: Please specifiy a default value for "blockSpriteFrames" property at its declaration: 😂
+    // Before:
+    @property(...)
+    value;
+
+    // After:
+    @property(...)
+    value = 0;
+2018-05-22T14:35:20.898Z - warn: Please specifiy a default value for "physicsPrefab" property at its declaration: 😂
+    // Before:
+    @property(...)
+    value;
+
+    // After:
+    @property(...)
+    value = 0;
+2018-05-22T14:35:20.899Z - warn: Should not specify class name MyPhysicsCollider for Component which defines in project.
+2018-05-22T14:38:54.991Z - normal: cacheStr : {}
+2018-05-22T14:38:55.142Z - warn: ctor of CCClass 'undefined' should not accept any arguments.
+2018-05-22T14:38:55.143Z - warn: ctor of CCClass 'undefined' should not accept any arguments.
+2018-05-22T14:38:55.143Z - warn: Please specifiy a default value for "blockSpriteFrames" property at its declaration: 😂
+    // Before:
+    @property(...)
+    value;
+
+    // After:
+    @property(...)
+    value = 0;
+2018-05-22T14:38:55.143Z - warn: Please specifiy a default value for "physicsPrefab" property at its declaration: 😂
+    // Before:
+    @property(...)
+    value;
+
+    // After:
+    @property(...)
+    value = 0;
+2018-05-22T14:38:55.143Z - warn: Should not specify class name MyPhysicsCollider for Component which defines in project.
+2018-05-22T14:39:29.774Z - normal: cacheStr : {}
+2018-05-22T14:39:29.779Z - warn: ctor of CCClass 'undefined' should not accept any arguments.
+2018-05-22T14:39:29.780Z - warn: ctor of CCClass 'undefined' should not accept any arguments.
+2018-05-22T14:39:29.785Z - warn: Please specifiy a default value for "blockSpriteFrames" property at its declaration: 😂
+    // Before:
+    @property(...)
+    value;
+
+    // After:
+    @property(...)
+    value = 0;
+2018-05-22T14:39:29.787Z - warn: Please specifiy a default value for "physicsPrefab" property at its declaration: 😂
+    // Before:
+    @property(...)
+    value;
+
+    // After:
+    @property(...)
+    value = 0;
+2018-05-22T14:39:29.788Z - warn: Should not specify class name MyPhysicsCollider for Component which defines in project.
+2018-05-22T14:46:33.510Z - normal: cacheStr : {}
+2018-05-22T14:46:33.529Z - warn: ctor of CCClass 'undefined' should not accept any arguments.
+2018-05-22T14:46:33.529Z - warn: ctor of CCClass 'undefined' should not accept any arguments.
+2018-05-22T14:46:33.538Z - warn: Please specifiy a default value for "blockSpriteFrames" property at its declaration: 😂
+    // Before:
+    @property(...)
+    value;
+
+    // After:
+    @property(...)
+    value = 0;
+2018-05-22T14:46:33.542Z - warn: Please specifiy a default value for "physicsPrefab" property at its declaration: 😂
+    // Before:
+    @property(...)
+    value;
+
+    // After:
+    @property(...)
+    value = 0;
+2018-05-22T14:46:33.543Z - warn: Should not specify class name MyPhysicsCollider for Component which defines in project.
+2018-05-22T14:51:01.715Z - normal: Simulator: SCREEN DPI = 96, SCREEN SCALE = 1.00
+2018-05-22T14:51:01.716Z - normal: Simulator: WORKAREA WIDTH 1912.00, HEIGHT 989.00
+2018-05-22T14:51:01.716Z - normal: Simulator: FRAME SCALE = 1.00
+2018-05-22T14:51:01.877Z - normal: Simulator: Ready for GLSL
+2018-05-22T14:51:01.878Z - normal: Simulator: Ready for OpenGL 2.0
+2018-05-22T14:51:01.878Z - normal: Simulator: 
+2018-05-22T14:51:01.878Z - normal: Simulator: {
+2018-05-22T14:51:01.878Z - normal: Simulator: 	gl.version: 4.5.13474 Compatibility Profile Context 22.19.162.4
+2018-05-22T14:51:01.878Z - normal: Simulator: 	gl.supports_NPOT: true
+2018-05-22T14:51:01.878Z - normal: Simulator: 	cocos2d.x.version: Cocos2d-x-lite v1.8.2
+2018-05-22T14:51:01.878Z - normal: Simulator: 	cocos2d.x.compiled_with_profiler: false
+2018-05-22T14:51:01.878Z - normal: Simulator: 	cocos2d.x.build_type: DEBUG
+2018-05-22T14:51:01.879Z - normal: Simulator: 	cocos2d.x.compiled_with_gl_state_cache: true
+2018-05-22T14:51:01.879Z - normal: Simulator: 	gl.max_texture_size: 16384
+2018-05-22T14:51:01.879Z - normal: Simulator: 	gl.supports_OES_packed_depth_stencil: false
+2018-05-22T14:51:01.879Z - normal: Simulator: 	gl.vendor: ATI Technologies Inc.
+2018-05-22T14:51:01.879Z - normal: Simulator: 	gl.renderer: AMD Radeon (TM) RX 480
+2018-05-22T14:51:01.879Z - normal: Simulator: 	gl.max_texture_units: 160
+2018-05-22T14:51:01.879Z - normal: Simulator: 	gl.supports_ETC1: false
+2018-05-22T14:51:01.879Z - normal: Simulator: 	gl.supports_PVRTC: false
+2018-05-22T14:51:01.880Z - normal: Simulator: 	gl.supports_BGRA8888: false
+2018-05-22T14:51:01.880Z - normal: Simulator: 	gl.supports_discard_framebuffer: false
+2018-05-22T14:51:01.880Z - normal: Simulator: 	gl.supports_vertex_array_object: true
+2018-05-22T14:51:01.880Z - normal: Simulator: 	gl.supports_OES_map_buffer: false
+2018-05-22T14:51:01.880Z - normal: Simulator: 	gl.supports_OES_depth24: false
+2018-05-22T14:51:01.880Z - normal: Simulator: }
+2018-05-22T14:51:01.881Z - normal: Simulator: 
+2018-05-22T14:51:01.881Z - normal: Simulator: 
+2018-05-22T14:51:01.881Z - normal: Simulator: cocos2d: warning, Director::setProjection() failed because size is 0
+2018-05-22T14:51:01.881Z - normal: Simulator: Project Config:
+2018-05-22T14:51:01.881Z - normal: Simulator:     project dir: E:\cocoscreator\resources\cocos2d-x\simulator\win32\
+2018-05-22T14:51:01.881Z - normal: Simulator:     writable path: $(PROJDIR)\
+2018-05-22T14:51:01.882Z - normal: Simulator:     script file: $(PROJDIR)\main.js
+2018-05-22T14:51:01.882Z - normal: Simulator:     frame size: 960 x 640
+2018-05-22T14:51:01.882Z - normal: Simulator:     frame scale: 1.00
+2018-05-22T14:51:01.882Z - normal: Simulator:     show console: NO
+2018-05-22T14:51:01.882Z - normal: Simulator:     write debug log: NO ()
+2018-05-22T14:51:01.882Z - normal: Simulator:     listen: 
+2018-05-22T14:51:01.882Z - normal: Simulator:     debugger: none
+2018-05-22T14:51:01.883Z - normal: Simulator:     add searching path:
+2018-05-22T14:51:01.883Z - normal: Simulator: 
+2018-05-22T14:51:01.883Z - normal: Simulator: 
+2018-05-22T14:51:01.883Z - normal: Simulator: 
+2018-05-22T14:51:01.883Z - normal: Simulator: ------------------------------------------------
+2018-05-22T14:51:01.883Z - normal: Simulator: LOAD Js FILE: main.js
+2018-05-22T14:51:01.883Z - normal: Simulator: ------------------------------------------------
+2018-05-22T14:51:01.884Z - normal: Simulator: D/jswrapper (364): Initializing V8, version: 6.0.286.52
+2018-05-22T14:51:02.196Z - normal: Simulator: D/jswrapper (813): libuv version: 1.13.1
+2018-05-22T14:51:02.216Z - normal: Simulator: D/jswrapper (112): Debugger listening..., visit [ chrome-devtools://devtools/bundled/inspector.html?v8only=true&ws=0.0.0.0:5086/00010002-0003-4004-8005-000600070008 ] in chrome browser to debug!
+2018-05-22T14:51:02.216Z - normal: Simulator: D/jswrapper (115): For help see https://nodejs.org/en/docs/inspector
+2018-05-22T14:51:02.303Z - normal: Simulator: D/jswrapper (125): JS: Cocos2d-x-lite v1.8.2
+2018-05-22T14:51:02.502Z - normal: Simulator: iShow!
+2018-05-22T14:51:02.507Z - normal: Simulator: D/jswrapper (125): JS: cacheStr : {}
+2018-05-22T14:51:02.517Z - normal: Simulator: D/jswrapper (144): JS: [WARN]: ctor of CCClass 'undefined' should not accept any arguments.
+2018-05-22T14:51:02.534Z - normal: Simulator: D/jswrapper (144): JS: [WARN]: ctor of CCClass 'undefined' should not accept any arguments.
+2018-05-22T14:51:02.541Z - normal: Simulator: D/jswrapper (144): JS: [WARN]: Please specifiy a default value for "blockSpriteFrames" property at its declaration: ??
+2018-05-22T14:51:02.541Z - normal: Simulator:     // Before:
+2018-05-22T14:51:02.541Z - normal: Simulator:     @property(...)
+2018-05-22T14:51:02.541Z - normal: Simulator:     value;
+2018-05-22T14:51:02.542Z - normal: Simulator: 
+2018-05-22T14:51:02.543Z - normal: Simulator:     // After:
+2018-05-22T14:51:02.543Z - normal: Simulator:     @property(...)
+2018-05-22T14:51:02.543Z - normal: Simulator:     value = 0;
+2018-05-22T14:51:02.549Z - normal: Simulator: D/jswrapper (144): JS: [WARN]: Please specifiy a default value for "physicsPrefab" property at its declaration: ??
+2018-05-22T14:51:02.549Z - normal: Simulator:     // Before:
+2018-05-22T14:51:02.550Z - normal: Simulator:     @property(...)
+2018-05-22T14:51:02.551Z - normal: Simulator:     value;
+2018-05-22T14:51:02.551Z - normal: Simulator: 
+2018-05-22T14:51:02.551Z - normal: Simulator:     // After:
+2018-05-22T14:51:02.551Z - normal: Simulator:     @property(...)
+2018-05-22T14:51:02.551Z - normal: Simulator:     value = 0;
+2018-05-22T14:51:02.551Z - normal: Simulator: D/jswrapper (144): JS: [WARN]: Should not specify class name MyPhysicsCollider for Component which defines in project.
+2018-05-22T14:51:02.614Z - normal: Simulator: D/jswrapper (125): JS: InitScene: 15.956000000000017ms
+2018-05-22T14:51:02.614Z - normal: Simulator: D/jswrapper (125): JS: AutoRelease: 0.1379999999999768ms
+2018-05-22T14:51:02.614Z - normal: Simulator: D/jswrapper (125): JS: Destroy: 0.07999999999998408ms
+2018-05-22T14:51:02.615Z - normal: Simulator: D/jswrapper (125): JS: AttachPersist: 0.023000000000024556ms
+2018-05-22T14:51:02.617Z - normal: Simulator: D/jswrapper (125): JS: event type : 0
+2018-05-22T14:51:02.618Z - normal: Simulator: D/jswrapper (125): JS: **************parseDataFromDB*************
+2018-05-22T14:51:02.619Z - normal: Simulator: D/jswrapper (125): JS: **************parseDataFromDB*************
+2018-05-22T14:51:02.619Z - normal: Simulator: D/jswrapper (125): JS: **************parseDataFromDB*************
+2018-05-22T14:51:02.619Z - normal: Simulator: D/jswrapper (125): JS: **************parseDataFromDB*************
+2018-05-22T14:51:02.619Z - normal: Simulator: D/jswrapper (144): JS: ServerType = 1 
+2018-05-22T14:51:02.633Z - normal: Simulator: D/jswrapper (125): JS: load viewGameView
+2018-05-22T14:51:02.633Z - normal: Simulator: D/jswrapper (125): JS: defaut : E:/TSDemo/assets/resources/audio/effect/click_button.mp3
+2018-05-22T14:51:02.633Z - normal: Simulator: D/jswrapper (125): JS: Activate: 17.61700000000002ms
+2018-05-22T14:51:02.650Z - normal: Simulator: D/jswrapper (125): JS: openView : hello
+2018-05-22T14:51:02.669Z - normal: Simulator: D/jswrapper (125): JS: ****** push view *********  GameView
+2018-05-22T14:51:02.669Z - normal: Simulator: D/jswrapper (125): JS: isFullScene : true
+2018-05-22T14:51:02.669Z - normal: Simulator: D/jswrapper (125): JS: stack length :1
+2018-05-22T14:51:02.669Z - normal: Simulator: D/jswrapper (125): JS: onEnter :LogoViewLogic
+2018-05-22T14:51:02.687Z - normal: Simulator: D/jswrapper (125): JS: retainDeps : E:/TSDemo/library/imports/45/45519884-8f2b-4e1c-95b8-f489861b906c.json
+2018-05-22T14:51:02.687Z - normal: Simulator: D/jswrapper (125): JS: retainDeps : E:/TSDemo/library/imports/ea/ea60aabc-c5d1-41cc-b210-b44c453f3a7a.json
+2018-05-22T14:51:04.644Z - normal: Simulator: D/jswrapper (125): JS: showPrefabPreLoad[object Object]
+2018-05-22T14:51:04.644Z - normal: Simulator: D/jswrapper (125): JS: showPrefab
+2018-05-22T14:51:04.645Z - normal: Simulator: D/jswrapper (125): JS: openView : [object Object]
+2018-05-22T14:51:04.652Z - normal: Simulator: D/jswrapper (125): JS: onEnter :LogoViewLogic
+2018-05-22T14:51:05.381Z - normal: Simulator: D/jswrapper (125): JS: showPrefabPreLoad[object Object]
+2018-05-22T14:51:05.382Z - normal: Simulator: D/jswrapper (125): JS: showPrefab
+2018-05-22T14:51:05.382Z - normal: Simulator: D/jswrapper (125): JS: openView : [object Object]
+2018-05-22T14:51:05.386Z - normal: Simulator: D/jswrapper (125): JS: onEnter :LogoViewLogic
+2018-05-22T14:51:08.497Z - normal: Simulator: D/jswrapper (125): JS: showPrefabPreLoad[object Object]
+2018-05-22T14:51:08.497Z - normal: Simulator: D/jswrapper (125): JS: showPrefab
+2018-05-22T14:51:08.498Z - normal: Simulator: D/jswrapper (125): JS: openView : [object Object]
+2018-05-22T14:51:08.501Z - normal: Simulator: D/jswrapper (125): JS: onEnter :LogoViewLogic
+2018-05-22T14:51:12.163Z - normal: Simulator: D/jswrapper (125): JS: showPrefabPreLoad[object Object]
+2018-05-22T14:51:12.163Z - normal: Simulator: D/jswrapper (125): JS: showPrefab
+2018-05-22T14:51:12.163Z - normal: Simulator: D/jswrapper (125): JS: openView : [object Object]
+2018-05-22T14:51:12.165Z - normal: Simulator: D/jswrapper (125): JS: onEnter :LogoViewLogic
+2018-05-22T14:51:13.768Z - normal: Simulator: D/jswrapper (447): ScriptEngine::cleanup begin ...
+2018-05-22T14:51:13.768Z - normal: Simulator: D/jswrapper (588): GC begin ..., (js->native map) size: 168, all objects: 452
+2018-05-22T14:51:13.816Z - normal: Simulator: D/jswrapper (596): GC end ..., (js->native map) size: 144, all objects: 428
+2018-05-22T14:51:13.817Z - normal: Simulator: D/jswrapper (588): GC begin ..., (js->native map) size: 144, all objects: 428
+2018-05-22T14:51:13.847Z - normal: Simulator: D/jswrapper (596): GC end ..., (js->native map) size: 144, all objects: 428
+2018-05-22T14:51:13.847Z - normal: Simulator: D/jswrapper (588): GC begin ..., (js->native map) size: 0, all objects: 0
+2018-05-22T14:51:13.868Z - normal: Simulator: D/jswrapper (596): GC end ..., (js->native map) size: 0, all objects: 0
+2018-05-22T14:51:13.891Z - normal: Simulator: D/jswrapper (480): Starting to cleanup dragonbones object, count: 0
+2018-05-22T14:51:13.891Z - normal: Simulator: D/jswrapper (499): After first cleanup, dragonbones object remained count: 0
+2018-05-22T14:51:13.891Z - normal: Simulator: D/jswrapper (515): After second cleanup, dragonbones object remained count: 0
+2018-05-22T14:51:13.891Z - normal: Simulator: D/jswrapper (510): ScriptEngine::cleanup end ...
+2018-05-22T14:52:47.304Z - normal: Simulator: SCREEN DPI = 96, SCREEN SCALE = 1.00
+2018-05-22T14:52:47.307Z - normal: Simulator: WORKAREA WIDTH 1912.00, HEIGHT 989.00
+2018-05-22T14:52:47.307Z - normal: Simulator: FRAME SCALE = 1.00
+2018-05-22T14:52:47.524Z - normal: Simulator: Ready for GLSL
+2018-05-22T14:52:47.525Z - normal: Simulator: Ready for OpenGL 2.0
+2018-05-22T14:52:47.525Z - normal: Simulator: 
+2018-05-22T14:52:47.525Z - normal: Simulator: {
+2018-05-22T14:52:47.525Z - normal: Simulator: 	gl.version: 4.5.13474 Compatibility Profile Context 22.19.162.4
+2018-05-22T14:52:47.526Z - normal: Simulator: 	gl.supports_NPOT: true
+2018-05-22T14:52:47.526Z - normal: Simulator: 	cocos2d.x.version: Cocos2d-x-lite v1.8.2
+2018-05-22T14:52:47.526Z - normal: Simulator: 	cocos2d.x.compiled_with_profiler: false
+2018-05-22T14:52:47.526Z - normal: Simulator: 	cocos2d.x.build_type: DEBUG
+2018-05-22T14:52:47.526Z - normal: Simulator: 	cocos2d.x.compiled_with_gl_state_cache: true
+2018-05-22T14:52:47.526Z - normal: Simulator: 	gl.max_texture_size: 16384
+2018-05-22T14:52:47.526Z - normal: Simulator: 	gl.supports_OES_packed_depth_stencil: false
+2018-05-22T14:52:47.526Z - normal: Simulator: 	gl.vendor: ATI Technologies Inc.
+2018-05-22T14:52:47.526Z - normal: Simulator: 	gl.renderer: AMD Radeon (TM) RX 480
+2018-05-22T14:52:47.526Z - normal: Simulator: 	gl.max_texture_units: 160
+2018-05-22T14:52:47.526Z - normal: Simulator: 	gl.supports_ETC1: false
+2018-05-22T14:52:47.526Z - normal: Simulator: 	gl.supports_PVRTC: false
+2018-05-22T14:52:47.527Z - normal: Simulator: 	gl.supports_BGRA8888: false
+2018-05-22T14:52:47.527Z - normal: Simulator: 	gl.supports_discard_framebuffer: false
+2018-05-22T14:52:47.527Z - normal: Simulator: 	gl.supports_vertex_array_object: true
+2018-05-22T14:52:47.527Z - normal: Simulator: 	gl.supports_OES_map_buffer: false
+2018-05-22T14:52:47.527Z - normal: Simulator: 	gl.supports_OES_depth24: false
+2018-05-22T14:52:47.527Z - normal: Simulator: }
+2018-05-22T14:52:47.527Z - normal: Simulator: 
+2018-05-22T14:52:47.527Z - normal: Simulator: 
+2018-05-22T14:52:47.527Z - normal: Simulator: cocos2d: warning, Director::setProjection() failed because size is 0
+2018-05-22T14:52:47.528Z - normal: Simulator: Project Config:
+2018-05-22T14:52:47.528Z - normal: Simulator:     project dir: E:\cocoscreator\resources\cocos2d-x\simulator\win32\
+2018-05-22T14:52:47.528Z - normal: Simulator:     writable path: $(PROJDIR)\
+2018-05-22T14:52:47.528Z - normal: Simulator:     script file: $(PROJDIR)\main.js
+2018-05-22T14:52:47.528Z - normal: Simulator:     frame size: 960 x 640
+2018-05-22T14:52:47.528Z - normal: Simulator:     frame scale: 1.00
+2018-05-22T14:52:47.528Z - normal: Simulator:     show console: NO
+2018-05-22T14:52:47.528Z - normal: Simulator:     write debug log: NO ()
+2018-05-22T14:52:47.528Z - normal: Simulator:     listen: 
+2018-05-22T14:52:47.528Z - normal: Simulator:     debugger: none
+2018-05-22T14:52:47.528Z - normal: Simulator:     add searching path:
+2018-05-22T14:52:47.528Z - normal: Simulator: 
+2018-05-22T14:52:47.529Z - normal: Simulator: 
+2018-05-22T14:52:47.529Z - normal: Simulator: 
+2018-05-22T14:52:47.529Z - normal: Simulator: ------------------------------------------------
+2018-05-22T14:52:47.529Z - normal: Simulator: LOAD Js FILE: main.js
+2018-05-22T14:52:47.529Z - normal: Simulator: ------------------------------------------------
+2018-05-22T14:52:47.530Z - normal: Simulator: D/jswrapper (364): Initializing V8, version: 6.0.286.52
+2018-05-22T14:52:47.837Z - normal: Simulator: D/jswrapper (813): libuv version: 1.13.1
+2018-05-22T14:52:47.862Z - normal: Simulator: D/jswrapper (112): Debugger listening..., visit [ chrome-devtools://devtools/bundled/inspector.html?v8only=true&ws=0.0.0.0:5086/00010002-0003-4004-8005-000600070008 ] in chrome browser to debug!
+2018-05-22T14:52:47.862Z - normal: Simulator: D/jswrapper (115): For help see https://nodejs.org/en/docs/inspector
+2018-05-22T14:52:47.953Z - normal: Simulator: D/jswrapper (125): JS: Cocos2d-x-lite v1.8.2
+2018-05-22T14:52:48.152Z - normal: Simulator: iShow!
+2018-05-22T14:52:48.156Z - normal: Simulator: D/jswrapper (125): JS: cacheStr : {}
+2018-05-22T14:52:48.170Z - normal: Simulator: D/jswrapper (144): JS: [WARN]: ctor of CCClass 'undefined' should not accept any arguments.
+2018-05-22T14:52:48.170Z - normal: Simulator: D/jswrapper (144): JS: [WARN]: ctor of CCClass 'undefined' should not accept any arguments.
+2018-05-22T14:52:48.189Z - normal: Simulator: D/jswrapper (144): JS: [WARN]: Please specifiy a default value for "blockSpriteFrames" property at its declaration: ??
+2018-05-22T14:52:48.189Z - normal: Simulator:     // Before:
+2018-05-22T14:52:48.189Z - normal: Simulator:     @property(...)
+2018-05-22T14:52:48.190Z - normal: Simulator:     value;
+2018-05-22T14:52:48.190Z - normal: Simulator: 
+2018-05-22T14:52:48.190Z - normal: Simulator:     // After:
+2018-05-22T14:52:48.190Z - normal: Simulator:     @property(...)
+2018-05-22T14:52:48.190Z - normal: Simulator:     value = 0;
+2018-05-22T14:52:48.192Z - normal: Simulator: D/jswrapper (144): JS: [WARN]: Please specifiy a default value for "physicsPrefab" property at its declaration: ??
+2018-05-22T14:52:48.193Z - normal: Simulator:     // Before:
+2018-05-22T14:52:48.194Z - normal: Simulator:     @property(...)
+2018-05-22T14:52:48.196Z - normal: Simulator:     value;
+2018-05-22T14:52:48.196Z - normal: Simulator: 
+2018-05-22T14:52:48.196Z - normal: Simulator:     // After:
+2018-05-22T14:52:48.196Z - normal: Simulator:     @property(...)
+2018-05-22T14:52:48.196Z - normal: Simulator:     value = 0;
+2018-05-22T14:52:48.196Z - normal: Simulator: D/jswrapper (144): JS: [WARN]: Should not specify class name MyPhysicsCollider for Component which defines in project.
+2018-05-22T14:52:48.235Z - normal: Simulator: D/jswrapper (125): JS: InitScene: 1.0269999999999868ms
+2018-05-22T14:52:48.235Z - normal: Simulator: D/jswrapper (125): JS: AutoRelease: 0.13400000000001455ms
+2018-05-22T14:52:48.236Z - normal: Simulator: D/jswrapper (125): JS: Destroy: 0.08400000000000318ms
+2018-05-22T14:52:48.236Z - normal: Simulator: D/jswrapper (125): JS: AttachPersist: 0.007000000000005002ms
+2018-05-22T14:52:48.236Z - normal: Simulator: D/jswrapper (125): JS: event type : 0
+2018-05-22T14:52:48.236Z - normal: Simulator: D/jswrapper (125): JS: **************parseDataFromDB*************
+2018-05-22T14:52:48.239Z - normal: Simulator: D/jswrapper (125): JS: **************parseDataFromDB*************
+2018-05-22T14:52:48.240Z - normal: Simulator: D/jswrapper (125): JS: **************parseDataFromDB*************
+2018-05-22T14:52:48.240Z - normal: Simulator: D/jswrapper (125): JS: **************parseDataFromDB*************
+2018-05-22T14:52:48.240Z - normal: Simulator: D/jswrapper (144): JS: ServerType = 1 
+2018-05-22T14:52:48.240Z - normal: Simulator: D/jswrapper (125): JS: load viewGameView
+2018-05-22T14:52:48.240Z - normal: Simulator: D/jswrapper (125): JS: defaut : E:/TSDemo/assets/resources/audio/effect/click_button.mp3
+2018-05-22T14:52:48.240Z - normal: Simulator: D/jswrapper (125): JS: Activate: 6.3700000000000045ms
+2018-05-22T14:52:48.242Z - normal: Simulator: D/jswrapper (125): JS: openView : hello
+2018-05-22T14:52:48.245Z - normal: Simulator: D/jswrapper (125): JS: ****** push view *********  GameView
+2018-05-22T14:52:48.246Z - normal: Simulator: D/jswrapper (125): JS: isFullScene : true
+2018-05-22T14:52:48.246Z - normal: Simulator: D/jswrapper (125): JS: stack length :1
+2018-05-22T14:52:48.246Z - normal: Simulator: D/jswrapper (125): JS: onEnter :LogoViewLogic
+2018-05-22T14:52:48.246Z - normal: Simulator: D/jswrapper (125): JS: retainDeps : E:/TSDemo/library/imports/45/45519884-8f2b-4e1c-95b8-f489861b906c.json
+2018-05-22T14:52:48.246Z - normal: Simulator: D/jswrapper (125): JS: retainDeps : E:/TSDemo/library/imports/ea/ea60aabc-c5d1-41cc-b210-b44c453f3a7a.json
+2018-05-22T14:53:05.098Z - normal: Simulator: SimulatorWin::openNewPlayerWithProjectConfig(): E:\cocoscreator\resources\cocos2d-x\simulator\win32\Simulator.exe -workdir "E:\cocoscreator\resources\cocos2d-x\simulator\win32\\" -entry "E:\cocoscreator\resources\cocos2d-x\simulator\win32\main.js" -writable-path "E:\cocoscreator\resources\cocos2d-x\simulator\win32\\" -resolution 1136x640 -console disable -position 181,135
+2018-05-22T14:53:05.119Z - normal: Simulator: D/jswrapper (447): ScriptEngine::cleanup begin ...
+2018-05-22T14:53:05.119Z - normal: Simulator: D/jswrapper (588): GC begin ..., (js->native map) size: 67, all objects: 351
+2018-05-22T14:53:05.152Z - normal: Simulator: D/jswrapper (596): GC end ..., (js->native map) size: 46, all objects: 330
+2018-05-22T14:53:05.152Z - normal: Simulator: D/jswrapper (588): GC begin ..., (js->native map) size: 46, all objects: 330
+2018-05-22T14:53:05.184Z - normal: Simulator: D/jswrapper (596): GC end ..., (js->native map) size: 46, all objects: 330
+2018-05-22T14:53:05.184Z - normal: Simulator: D/jswrapper (588): GC begin ..., (js->native map) size: 0, all objects: 0
+2018-05-22T14:53:05.217Z - normal: Simulator: D/jswrapper (596): GC end ..., (js->native map) size: 0, all objects: 0
+2018-05-22T14:53:05.217Z - normal: Simulator: D/jswrapper (480): Starting to cleanup dragonbones object, count: 0
+2018-05-22T14:53:05.218Z - normal: Simulator: D/jswrapper (499): After first cleanup, dragonbones object remained count: 0
+2018-05-22T14:53:05.218Z - normal: Simulator: D/jswrapper (515): After second cleanup, dragonbones object remained count: 0
+2018-05-22T14:53:05.218Z - normal: Simulator: D/jswrapper (510): ScriptEngine::cleanup end ...

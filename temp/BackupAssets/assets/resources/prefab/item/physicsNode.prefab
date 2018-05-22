@@ -119,16 +119,6 @@
     "bullet": false
   },
   {
-    "__type__": "4276cdxatZK2IwMPHh5FilS",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 1
-    },
-    "_enabled": true,
-    "isFullScene": true
-  },
-  {
     "__type__": "6bdc0/NV6tM94FPmvzf7E7r",
     "_name": "",
     "_objFlags": 0,
@@ -149,6 +139,16 @@
     },
     "points": [],
     "lineWidth": 5
+  },
+  {
+    "__type__": "4276cdxatZK2IwMPHh5FilS",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "isFullScene": true
   },
   {
     "__type__": "cc.PrefabInfo",

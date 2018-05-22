@@ -44,7 +44,7 @@ export default class physicsNodeLogic extends UserComponent {
 
         this.path = this.addComponent(cc.Graphics);
         this.path.strokeColor = cc.color(255, 0, 0);
-        this.path.lineWidth = 20;
+        this.path.lineWidth = 4;
 
         this.rigibodyLogic = this.getComponent(cc.RigidBody);
         this.physicsChain = this.getComponent("MyPhysicsCollider");
@@ -98,11 +98,11 @@ export default class physicsNodeLogic extends UserComponent {
     }
 
     touchEnd(event : cc.Event.EventTouch) {
-        let touchLoc = event.getLocation();
-        touchLoc = this.node.parent.convertToNodeSpaceAR(touchLoc);
-        this.path.lineTo(touchLoc.x, touchLoc.y);
-        this.path.stroke();
-        this.points.push(touchLoc);
+        // let touchLoc = event.getLocation();
+        // touchLoc = this.node.parent.convertToNodeSpaceAR(touchLoc);
+        // this.path.lineTo(touchLoc.x, touchLoc.y);
+        // this.path.stroke();
+        // this.points.push(touchLoc);
         this.createRigibody();
     }
 
