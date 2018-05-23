@@ -102,6 +102,8 @@ export default class GameInit extends cc.Component {
         var promise1 = new Promise(function(resolve, reject) {
             setTimeout(resolve, 100, 'foo');
         });
+
+        cc.director.setDisplayStats(true);
     }
 
     fixDesignSolution()

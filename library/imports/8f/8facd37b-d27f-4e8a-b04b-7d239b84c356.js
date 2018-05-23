@@ -1,5 +1,5 @@
 "use strict";
-cc._RF.push(module, '4276cdxatZK2IwMPHh5FilS', 'physicsNodeLogic');
+cc._RF.push(module, '8facdN70n9OirBLfSObhMNW', 'physicsNodeLogic');
 // scripts/viewCtrl/GameView/physicsNodeLogic.ts
 
 Object.defineProperty(exports, "__esModule", { value: true });
@@ -78,14 +78,15 @@ var physicsNodeLogic = /** @class */ (function (_super) {
         }
     };
     physicsNodeLogic.prototype.touchEnd = function (event) {
-        // let touchLoc = event.getLocation();
-        // touchLoc = this.node.parent.convertToNodeSpaceAR(touchLoc);
-        // this.path.lineTo(touchLoc.x, touchLoc.y);
-        // this.path.stroke();
-        // this.points.push(touchLoc);
+        var touchLoc = event.getLocation();
+        touchLoc = this.node.parent.convertToNodeSpaceAR(touchLoc);
+        this.path.lineTo(touchLoc.x, touchLoc.y);
+        this.path.stroke();
+        this.points.push(touchLoc);
         this.createRigibody();
     };
     physicsNodeLogic.prototype.touchCancel = function (event) {
+        this.createRigibody();
     };
     physicsNodeLogic.prototype.checkIsCanDraw = function (lastPoint, nowPoint) {
         return cc.pDistance(lastPoint, nowPoint) >= 20;

@@ -98,16 +98,16 @@ export default class physicsNodeLogic extends UserComponent {
     }
 
     touchEnd(event : cc.Event.EventTouch) {
-        // let touchLoc = event.getLocation();
-        // touchLoc = this.node.parent.convertToNodeSpaceAR(touchLoc);
-        // this.path.lineTo(touchLoc.x, touchLoc.y);
-        // this.path.stroke();
-        // this.points.push(touchLoc);
+        let touchLoc = event.getLocation();
+        touchLoc = this.node.parent.convertToNodeSpaceAR(touchLoc);
+        this.path.lineTo(touchLoc.x, touchLoc.y);
+        this.path.stroke();
+        this.points.push(touchLoc);
         this.createRigibody();
     }
 
     touchCancel(event : cc.Event.EventTouch) {
-        
+        this.createRigibody();
     }
 
     checkIsCanDraw(lastPoint: cc.Vec2, nowPoint: cc.Vec2) {

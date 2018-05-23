@@ -87,6 +87,7 @@ var GameInit = /** @class */ (function (_super) {
         var promise1 = new Promise(function (resolve, reject) {
             setTimeout(resolve, 100, 'foo');
         });
+        cc.director.setDisplayStats(true);
     };
     GameInit.prototype.fixDesignSolution = function () {
         var frameSize = cc.view.getCanvasSize();
